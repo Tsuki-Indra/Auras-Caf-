@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{;
+
+margin-top: 15px;
+padding: 30px;
+
+
+}
+
+h4{color: aliceblue}
+
+h2{
+	margin-top: 85px
+
+}
+
+
+h5{
+	color: white
+
+}
+
+nav{
+background-color: black;
+	text-decoration: none;
+}
+
+
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+
+
+.buttom{
+	margin-bottom: 400px;
+}
+
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+	
+	float:right;
+}
+
+
+
+.containerF{
+	align-content: center;
+	height: 600px
+	
+	}
+
+
+.form-section {
+  min-height: 60vh;
+	min-width: 30vh;
+
+	max-width:100%;
+  padding: 40px;
+}
+
+
+
+body {
+  background-image: url("../IMAGES/image2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Elimina fondo blanco del jumbotron */
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 100px;
+}
+
+/*  fondo al formulario */
+.form-wrapper {
+  background-color: rgba(255, 255, 255, 0.85); 
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formulario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Tu hoja de estilos personalizada -->
+  <link rel="stylesheet" href="CSS/ESTILOS2.css">
+
+  <!-- Bootstrap JS + jQuery + Popper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="INDEX.html">
+        <img src="IMAGES/logo auras.jpg" alt="Logo" style="height:80px;">
+      </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="INDEX.html">Inicio</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+	
+	
+	
+	<!-- Formularios -->
+ <div class="jumbotron text-center">
+		  
+    <h1> ¡Estás a un paso de probar el mejor café oaxaqueño!</h1>
+
+<!-- Sección del formulario -->
+  
+     <section class="form-section d-flex justify-content-center align-items-center">
+  <div class="form-wrapper">
+	 
+		  
+    <form class="form-row">
+      <div class="form-group col-md-6 mb-3">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="form-group col-md-6 mb-3">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+      <div class="form-group col-md-6 mb-3">
+        <label for="fecha">Fecha de visita</label>
+        <input type="date" class="form-control" id="fecha" required>
+      </div>
+      <div class="form-group col-md-6 mb-3">
+        <label for="origen">Ciudad de origen</label>
+        <select id="origen" class="form-control">
+          <option selected>Selecciona...</option>
+          <option>Ciudad de México</option>
+          <option>Oaxaca</option>
+          <option>Monterrey</option>
+          <option>Otra</option>
+        </select>
+      </div>
+      <div class="form-group col-12 mb-3">
+        <label for="comentarios">Comentarios</label>
+        <textarea class="form-control" id="comentarios" rows="3"></textarea>
+      </div>
+      <div class="form-group col-12 text-center">
+        <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar</button>
+		  
+		  <div id="mensajeConfirmacion" class="alert alert-success mt-3 d-none text-center">
+  ¡Gracias por agendar tu visita! Te contactaremos pronto.
+</div>
+		</div>  
+ </form>
+</div>
+  </section> 
+	 </div>
+	
+	
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); 
+    document.getElementById("mensajeConfirmacion").classList.remove("d-none");
+  });
+</script>	
+</body>
+</html>
